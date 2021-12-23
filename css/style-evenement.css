@@ -1,0 +1,155 @@
+*, ::before, ::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #F1F1F1;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main{
+	flex: 1 0 auto;
+}
+
+.grille-event{
+	height: auto;
+	width: 100%;
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: repeat(14, 1fr);
+	grid-template-rows: auto repeat(5, 500px);
+	grid-gap: 16px;
+	background: #F1F1F1;
+}
+
+.event{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+	color: black;
+	padding: 10px 0px;
+}
+
+.ariane{
+	justify-content: left;
+	grid-column: 2 / 14;
+}
+
+.ariane p, .ariane a{
+	color: #7C7B7B;
+	font-size: 20px;
+	margin-top: 10px;
+	padding: 10px 5px 0px 5px;
+	text-decoration: none;
+}
+
+/* event-bloc */
+
+.event-bloc{
+	padding: 0px;
+	grid-column: 15 / -15;
+	display: grid;
+	grid-template-columns: 1fr 100px 1fr;
+}
+
+.event-photo-left,
+.event-photo-right{
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.event-photo-left img,
+.event-photo-right img{
+	margin: 50px 0px;
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	object-position: center 0px;
+}
+
+.event-split-bar{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+}
+
+.split-bar{
+	margin: 0 auto;
+	width: 2px;
+	height: 50%;
+	background-color: #262626;
+}
+
+.split-circle{
+	margin: 10px auto;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #262626;
+}
+
+.event-photo-right{
+	grid-column: 3 / 3; 
+}
+
+/* text droite */
+
+.event-text-right{
+	margin-left: 40px; 
+	display: grid;
+	grid-template-columns: 300px 30px;
+	grid-template-rows: 250px 30px;
+}
+
+.event-text-right h3,
+.event-text-left h3{
+	grid-column: span 2;
+}
+
+.event-text-right p,
+.event-text-left p{
+	font-size: 25px;
+}
+
+.event-text-right img,
+.event-text-left img{
+	width: 25px;
+}
+
+/* text gauche */
+
+.event-text-left{
+	justify-content: right;
+	margin-right: 40px;
+	display: grid;
+	grid-template-columns: 100px 300px;
+	grid-template-rows: 250px 30px;
+}
+
+.event-text-left h3{
+	text-align: right;
+	grid-column: span 2;
+
+}
+
+.event-text-left p{
+	text-align: right;
+}
+
+.event-text-left img{
+	margin-left: 20px;
+	transform: rotate(180deg);
+}
+
+.grille-event:last-child{
+	margin-bottom: 150px;
+}

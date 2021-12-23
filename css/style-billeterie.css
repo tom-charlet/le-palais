@@ -1,0 +1,229 @@
+*, ::before, ::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #F1F1F1;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main{
+	flex: 1 0 auto;
+}
+
+.grille-billet{
+	height: auto;
+	width: 100%;
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: repeat(14, 1fr);
+	grid-template-rows: auto auto auto;
+	grid-gap: 16px;
+	background: #F1F1F1;
+}
+
+.billet{
+	display: flex;
+	justify-content: center;
+	font-size: 15px;
+	color: black;
+	padding: 10px 0px;
+}
+
+.ariane{
+	justify-content: left;
+	grid-column: 2 / 14;
+}
+
+.ariane p, .ariane a{
+	color: #7C7B7B;
+	font-size: 20px;
+	margin-top: 10px;
+	padding: 10px 5px 0px 5px;
+	text-decoration: none;
+}
+
+/* billet-description */
+
+.billet-desc{
+	grid-column: 2 / 14;
+	display: grid;
+	height: 500px;
+	margin: 20px 0px 50px;
+	grid-template-rows: repeat(3, auto);
+	grid-template-columns: auto 500px;
+}
+
+.desc-contenu{
+	width: 82%;
+}
+
+.desc-contenu h3,
+.desc-contenu h4,
+.desc-contenu p{
+	grid-column: 1 / 1;
+	grid-row: span 1;
+	padding: 35px 30px 35px 0px;
+}
+
+.desc-contenu h3{
+	padding-top: 0px;
+}
+
+.desc-calendar{
+	grid-column-start: 2;
+	grid-row: 1 / -1;
+	width: 500px;
+	height: 500px;
+	background-color: #333;
+}
+
+.desc-calendar img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center 0px;
+}
+
+/* billet-form */
+
+.billet-form h4{
+	padding: 50px 0px;
+	grid-column: span 2;
+}
+
+.billet-form{
+	grid-column: 2 / 11;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: repeat(5, auto);
+	padding-bottom: 150px;
+}
+
+/* form-personne */
+
+.form-personne{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+}
+
+.form-personne div{
+	margin: 20px 0px;
+}
+
+.billet-form label,
+.form-personne input{
+	display: block;
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: #7C7B7B;
+	font-weight: lighter;
+}
+
+.billet-form label{
+	font-size: 20px;
+}
+
+.form-personne input{
+	border: 0;
+	padding: 10px;
+	width: 70%;
+}
+
+/* form-age */
+
+.form-age{
+	grid-row-start: 3; 
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto;
+}
+
+.form-age label{
+	grid-column: span 4;
+	padding: 20px 0px 40px
+}
+
+.form-age div{
+	grid-row-start: 2;
+}
+
+.age-bloc p,
+.age-bloc div{
+	display: block;
+	padding: 8px 0px;
+	text-align: center;
+	font-size: 16px;
+	width: auto;
+}
+
+.age-prix{
+	color: #C58C3B;
+}
+
+.age-select p{
+	display: inline;
+}
+
+.age-select div{
+	display: inline-block;
+	margin: 8px 10px;
+	padding: 3px;
+	height: 25px;
+	width: 25px;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.age-select input{
+	padding: 10px 0px 10px 10px;
+	border: 0;
+	width: 80px;
+	text-align: center;
+}
+
+/* form-groupe */
+
+.form-groupe{
+	grid-row-start: 4;
+	display: grid;
+	grid-template-rows: auto auto;
+	padding: 75px 0px;
+}
+
+.form-groupe label{
+	padding: 20px 0px 20px;
+}
+
+.form-groupe p{
+	width: 450px;
+}
+
+/* form-submit */
+
+.form-submit{
+	grid-row-start: 5;
+	width: 300px;
+	background-color: #C58C3B;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.form-submit input{
+	border: 0;
+	color: white;
+	background-color: transparent;
+	padding: 16px 16px 16px 20px;
+	font-size: 20px;
+}
+
+.form-submit img{
+	margin: auto 0px;
+	height: 100%;
+	width: 17px;
+}

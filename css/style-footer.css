@@ -1,0 +1,90 @@
+
+
+/* Style CSS style-footer */
+
+footer{
+	margin-top: 50px;
+	flex-shrink: 0;
+	background: #333;
+	width: 100%;
+	color: #F1F1F1;
+	display: grid;
+	grid-template-rows: auto auto;
+}
+
+.contenu-footer{
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 15px;
+	padding: 50px 0 60px;
+}
+
+.contenu-footer li{
+	list-style-type: none;
+	padding: 15px 0;
+}
+
+.contenu-footer li a{
+	text-decoration: none;
+	color: #F1F1F1;
+}
+
+.bloc-footer{
+	width: 15%;
+	margin: 0 30px;
+}
+
+.footer-contact h3,
+.footer-information h3,
+.footer-legal h3,
+.footer-icon h3{
+	color: #F1F1F1;
+	font-size: 20px;
+	padding-bottom: 25px;
+}
+
+.footer-resaux{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 16px;
+}
+
+.resaux-line{
+	grid-column: span 1;
+}
+
+.resaux-line div{
+	margin: 0 auto;
+	width: 2px;
+	height: 200px;
+	background-color: #F1F1F1;
+}
+
+.resaux-icon{
+	grid-column: span 1;
+	width: 40px;
+}
+
+.resaux-icon img{
+	width: 40px;
+	margin: 10px 10px;
+}
+
+.resaux-name li{
+	padding: 23px 0;
+}
+
+.footer-logo{
+	width: 150px;
+	margin: 50px 0px 0px 0px;
+}
+
+.footer-copyright{
+	font-size: 13px;
+	grid-row-start: 2;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}

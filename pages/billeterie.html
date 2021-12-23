@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>LaBilleterie</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style-principal.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-billeterie.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-header.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-lang-fr.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-footer.css">
+</head>
+
+<body>
+
+	<header class="grille-header">
+		<div class="logo"><a href="../index.html"><img src="../img/lePalaisLogoBlanc.svg"></a></div>
+		<nav class="menu">
+			<ul>
+				<li><a href="evenement.html">Les Evenements</a></li>
+				<li><a href="batiment.html">Le Bâtiment</a></li>
+				<li><a href="billeterie.html">La Billeterie</a></li>
+			</ul>
+		</nav>
+		<div class="recherche">
+			<form method="get" action="search.php">
+				<input type="search" id="barre-rechercher" name="rechercher" placeholder="Rechercher">
+				<input type="image" id="logo-rechercher" alt="submit" src="../img/iconLoupe.svg">
+			</form>
+		</div>
+		<div class="langue">
+			<form method="get" action="langue.php">
+				<input class="button-fr" type="submit" name="button" value="FR">
+				<input class="button-en" type="submit" name="button" value="EN">
+			</form>
+		</div>
+	</header>
+
+	<!-- MAIN -->
+
+	<main>
+		<div class="grille-billet">
+			<div class="billet ariane">
+				<a href="../index.html">Acceuil</a>
+				<p>></p>
+				<a href="billeterie.html">La Billeterie</a>
+			</div>
+
+			<!-- billet-desc -->
+
+			<section class="billet billet-desc">
+				<div class="desc-contenu">
+					<h3>La Billeterie</h3>
+					<h4>Réservez à l'avance !</h4>
+					<p>Voyez ce jeu exquis wallon, de graphie en kit mais bref. Portez ce vieux whisky au juge blond qui
+						fume
+						sur son île intérieure, à côté de l"alcôve ovoïde, où les bûches se consument dans l"âtre, ce
+						qui lui
+						permet de penser à la cænogenèse de l"être dont il est question dans la cause ambiguë entendue à
+						Moÿ, dans un capharnaüm qui, pense-t-il, diminue çà et là la qualité de son œuvre. Prouvez, beau
+						juge, que le fameux sandwich au yak tue. L"île exiguë, Où l"obèse jury mûr Fête l"haï volapük,
+						Âne ex
+						æquo au whist, Ôtez ce vœu déçu. Vieux pelage que je modifie : breitschwanz ou yak ? Dès Noël où
+						un
+						zéphyr haï me vêt de glaçons würmiens, je dîne d’exquis rôtis de bœuf au kir à l’aÿ d’âge mûr &
+						cætera</p>
+				</div>
+				<div class="desc-calendar">
+					<img src="img">
+				</div>
+			</section>
+
+			<form class="billet-form" method='POST' action='reservation.php'>
+				<h4>Remplissez le formulaire ci-dessous</h4>
+
+				<div class="form-personne">
+					<div>
+						<label for='nom'>Nom :</label>
+						<input type='text' name='nom' required='required'>
+					</div>
+					<div>
+						<label for='prenom'>Prenom :</label>
+						<input type='text' name='prenom' required='required'>
+					</div>
+					<div>
+						<label for='mail'>Adresse mail :</label>
+						<input type='email' name='mail' required='required'>
+					</div>
+					<div>
+						<label for='tel'>Téléphone :</label>
+						<input type='number' name='tel' required='required'>
+					</div>
+				</div>
+
+				<div class="form-age">
+					<label for="age">Ticket unitaire</label>
+
+					<div class="age-bloc">
+						<p>Enfant (7 à 17 ans)</p>
+						<p class="age-prix">2€</p>
+						<div class="age-select">
+							<div class="age-sign">
+								<p>-</p>
+							</div>
+							<input type="number" name="age" placeholder="0">
+							<div class="age-sign">
+								<p>+</p>
+							</div>
+						</div>
+					</div>
+					<div class="age-bloc">
+						<p>Etudiant (8 à 24 ans)</p>
+						<p class="age-prix">3€</p>
+						<div class="age-select">
+							<div class="age-sign">
+								<p>-</p>
+							</div>
+							<input type="number" name="age" placeholder="0">
+							<div class="age-sign">
+								<p>+</p>
+							</div>
+						</div>
+					</div>
+					<div class="age-bloc">
+						<p>Adulte (25 à 59 ans)</p>
+						<p class="age-prix">2€</p>
+						<div class="age-select">
+							<div class="age-sign">
+								<p>-</p>
+							</div>
+							<input type="number" name="age" placeholder="0">
+							<div class="age-sign">
+								<p>+</p>
+							</div>
+						</div>
+					</div>
+					<div class="age-bloc">
+						<p>Sénior (plus de 60 ans)</p>
+						<p class="age-prix">4€</p>
+						<div class="age-select">
+							<div class="age-sign">
+								<p>-</p>
+							</div>
+							<input type="number" name="age" placeholder="0">
+							<div class="age-sign">
+								<p>+</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="form-groupe">
+					<label for="age">Ticket de groupe</label>
+					<p>Veuillez nous contacter par téléphone pour des réservations de groupe.</p>
+				</div>
+
+				<div class="form-submit">
+					<input type="submit" name="reservation" value="Valider la réservation">
+					<img src="img/iconArrow.svg">
+				</div>
+			</form>
+		</div>
+	</main>
+
+	<footer>
+		<div class="contenu-footer">
+
+			<div class="bloc-footer footer-contact">
+				<h3>Contact</h3>
+				<ul>
+					<li><a href="a-propos.html">Email</a></li>
+					<li><a href="a-propos.html">Téléphone</a></li>
+				</ul>
+			</div>
+
+			<div class="bloc-footer footer-information">
+				<h3>Informations</h3>
+				<ul>
+					<li><a href="a-propos.html">Accessibilité</a></li>
+					<li><a href="a-propos.html">L'équipe de réalisation</a></li>
+					<li><a href="a-propos.html">Adresse</a></li>
+				</ul>
+			</div>
+
+			<div class="bloc-footer footer-legal">
+				<h3>Informations légales</h3>
+				<ul>
+					<li><a href="#">Mentions légales</a></li>
+					<li><a href="#">Téléphone</a></li>
+					<li><a href="#">Adresse</a></li>
+				</ul>
+			</div>
+
+			<div class="bloc-footer footer-resaux">
+				<div class="resaux-line">
+					<div></div>
+				</div>
+				<div class="resaux-icon">
+					<a href="#"><img src="../img/iconInsta.svg"></a>
+					<a href="#"><img src="../img/iconYoutube.svg"></a>
+					<a href="#"><img src="../img/iconTwitter.svg"></a>
+				</div>
+			</div>
+
+			<a href="../index.html"><img class="footer-logo" src="../img/lePalaisLogoBlanc.svg"></a>
+		</div>
+		<p class="footer-copyright">Copyright © 2021 TDA MMI ELBEUF</p>
+	</footer>
+
+</body>
+
+</html>

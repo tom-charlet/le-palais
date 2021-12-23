@@ -1,0 +1,75 @@
+*, ::before, ::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+	background-color: #F1F1F1;
+	font-family: 'Open Sans', sans-serif;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main{
+	flex: 1 0 auto;
+}
+
+p{
+	font-size: 18px;
+}
+
+h2{
+	font-family: 'Prata', serif;
+	font-weight: normal;
+	font-size: 90px;
+}
+
+h3{
+	font-family: 'Prata', serif;
+	font-weight: normal;
+	font-size: 90px;
+	color: #C58C3B;
+}
+
+h4{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+	color: #7C7B7B;
+}
+
+.ariane{
+	justify-content: left;
+	grid-column: 2 / 14;
+}
+
+.ariane p, .ariane a{
+	color: #7C7B7B;
+	font-size: 20px;
+	margin-top: 10px;
+	padding: 10px 5px 0px 5px;
+	text-decoration: none;
+}
+
+.menu li::after{
+	display: flex;
+	content: "";
+	display: block;
+	position: absolute;
+	top : 65px;
+	width: 83px;
+	height: 2px;
+	background: #C58C3B;
+	transform: scale(0);
+	transition: 0.2s ease-in-out;
+}
+
+.menu li:hover::after{
+	transform: scale(1);
+}

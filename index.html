@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LePalais</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style-principal.css">
+	<link rel="stylesheet" type="text/css" href="css/style-home.css">
+	<link rel="stylesheet" type="text/css" href="css/style-header.css">
+	<link rel="stylesheet" type="text/css" href="css/style-lang-fr.css">
+	<link rel="stylesheet" type="text/css" href="css/style-footer.css">
+</head>
+
+<body>
+
+	<header class="grille-header">
+		<div class="logo"><a href="home.html"><img src="img/lePalaisLogoBlanc.svg"></a></div>
+		<nav class="menu">
+			<ul>
+				<li><a href="pages/evenement.html">Les Evenements</a></li>
+				<li><a href="pages/batiment.html">Le Bâtiment</a></li>
+				<li><a href="pages/billeterie.html">La Billeterie</a></li>
+			</ul>
+		</nav>
+		<div class="recherche">
+			<form method="get" action="search.php">
+				<input type="search" id="barre-rechercher" name="rechercher" placeholder="Rechercher">
+				<input type="image" id="logo-rechercher" alt="submit" src="img/iconLoupe.svg">
+			</form>
+		</div>
+		<div class="langue">
+			<form method="get" action="langue.php">
+				<input class="button-fr" type="submit" name="button" value="FR">
+				<input class="button-en" type="submit" name="button" value="EN">
+			</form>
+		</div>
+	</header>
+
+	<!-- MAIN -->
+
+	<main>
+		<div class="grille-home">
+
+			<div class="home home-video">
+				<h2>Les Evenements</h2>
+
+				<div class="home-video-play">
+					<img src="img/iconPlay.svg">
+				</div>
+
+				<div class="home-video-open">
+					<div class="home-open-bar"></div>
+					<div class="home-open-stat"></div>
+					<p>ouvert actuellement</p>
+					<div class="home-open-bar"></div>
+				</div>
+
+				<!-- HOME-VIDEO -->
+
+				<div class="home-video-media">
+					<video loop autoplay muted>
+   						<source type="video/mp4" src="video/home_video_bg.mp4" media="(orientation: landscape)">
+ 					</video>
+				</div>
+				
+			</div>
+
+			<div class="home home-arrow">
+				<img src="img/iconArrowBlack.svg">
+			</div>
+
+			<div class="home home-description">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+
+			<div class="home home-split"><div class="split-bar"></div></div>
+
+			<div class="home home-sub">
+				<h4>Evènement en cours</h4>
+			</div>
+
+			<section class="home home-event-right">
+				<h3>Les foudriots</h3>
+				<p>Découvrez la dernière exposition de <strong>Philippe Argatti</strong> actuellement en lumière dans nos locaux.</p>
+				<div class="event-button">
+					<a href="pages/evenement-lesfoudriots.html">En savoir plus</a>
+					<img src="img/iconArrow.svg">
+				</div>
+				<div class="home-event-photo-right">
+					<img src="img/photo/CC_11.jpg">
+				</div>
+			</section>
+
+			<div class="home home-split">
+				<div class="split-bar"></div>
+			</div>
+
+			<div class="home home-sub">
+				<h4>Evènement précédents</h4>
+			</div>
+			
+			<section class="home home-event-left">
+				<h3>Urbanisme décadent</h3>
+				<p>Redécouvrez l'exposition de <strong>Philippe Argatti</strong> qui a été présentée en Avril 2021.</p>
+				<div class="event-button event-button-right">
+					<a href="#">En savoir plus</a> 
+					<img src="img/iconArrow.svg">
+				</div>
+				<div class="home-event-photo-left">
+					<img src="img/photo/CC_11.jpg">
+				</div>
+				<div class="slide-arrow">
+					<img src="img/iconArrowBlack.svg">
+					<img src="img/iconArrowBlack.svg">
+				</div>
+			</section>
+
+		</div>
+	</main>
+
+	<footer>
+		<div class="contenu-footer">
+
+			<div class="bloc-footer footer-contact">
+				<h3>Contact</h3>
+				<ul>
+					<li><a href="a-propos.html">Email</a></li>
+					<li><a href="a-propos.html">Téléphone</a></li>
+				</ul>
+			</div>
+
+			<div class="bloc-footer footer-information">
+				<h3>Informations</h3>
+				<ul>
+					<li><a href="pages/a-propos.html">Accessibilité</a></li>
+					<li><a href="pages/a-propos.html">L'équipe de réalisation</a></li>
+					<li><a href="pages/a-propos.html">Adresse</a></li>
+				</ul>
+			</div>
+
+			<div class="bloc-footer footer-legal">
+				<h3>Informations légales</h3>
+				<ul>
+					<li><a href="pages/a-propos.html">Mentions légales</a></li>
+					<li><a href="pages/a-propos.html">Téléphone</a></li>
+					<li><a href="pages/a-propos.html">Adresse</a></li>
+				</ul>
+			</div>
+
+			<div class="bloc-footer footer-resaux">
+				<div class="resaux-line"><div></div></div>
+				<div class="resaux-icon">
+					<a href="#"><img src="img/iconInsta.svg"></a>
+					<a href="#"><img src="img/iconYoutube.svg"></a>
+					<a href="#"><img src="img/iconTwitter.svg"></a>
+				</div>
+			</div>
+			
+			<a href="home.html"><img class="footer-logo" src="img/lePalaisLogoBlanc.svg"></a>
+		</div>
+		<p class="footer-copyright">Copyright © 2021 TDA MMI ELBEUF</p>
+	</footer>
+	
+</body>
+</html>

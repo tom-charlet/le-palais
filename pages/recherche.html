@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>LaRecherche</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style-principal.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-recherche.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-header.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-lang-fr.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-footer.css">
+</head>
+
+<body>
+
+	<header class="grille-header">
+		<div class="logo"><a href="../index.html"><img src="../img/lePalaisLogoBlanc.svg"></a></div>
+		<nav class="menu">
+			<ul>
+				<li><a href="evenement.html">Les Evenements</a></li>
+				<li><a href="batiment.html">Le Bâtiment</a></li>
+				<li><a href="billeterie.html">La Billeterie</a></li>
+			</ul>
+		</nav>
+		<div class="recherche">
+			<form method="get" action="search.php">
+				<input type="search" id="barre-rechercher" name="rechercher" placeholder="Rechercher">
+				<input type="image" id="logo-rechercher" alt="submit" src="../img/iconLoupe.svg">
+			</form>
+		</div>
+		<div class="langue">
+			<form method="get" action="langue.php">
+				<input class="button-fr" type="submit" name="button" value="FR">
+				<input class="button-en" type="submit" name="button" value="EN">
+			</form>
+		</div>
+	</header>
+
+	<!-- MAIN -->
+
+	<main>
+		<div class="grille-recherche-page">
+			<div class="recherche-page ariane">
+				<a href="../index.html">Acceuil</a>
+				<p>></p>
+				<a href="recherche.html">Rechercher</a>
+				<p>></p>
+				<p>"Mots recherchés"</p>
+			</div>
+
+			<section class="recherche_article">
+				<h3>La Billeterie</h3>
+				<p>Voyez ce jeu exquis wallon, de graphie en kit mais bref. Portez ce vieux whisky au juge blond qui
+					fume
+					sur son île intérieure, à côté de l"alcôve ovoïde, où les bûches se consument dans l"âtre, ce qui
+					lui</p>
+				<div class="article-photo">
+					<img src="../img/photo/CC_11.jpg">
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer>
+		<div class="contenu-footer">
+
+			<div class="bloc-footer footer-contact">
+				<h3>Contact</h3>
+				<ul>
+					<li><a href="a-propos.html">Email</a></li>
+					<li><a href="a-propos.html">Téléphone</a></li>
+				</ul>
+			</div>
+
+			<div class="bloc-footer footer-information">
+				<h3>Informations</h3>
+				<ul>
+					<li><a href="a-propos.html">Accessibilité</a></li>
+					<li><a href="a-propos.html">L'équipe de réalisation</a></li>
+					<li><a href="a-propos.html">Adresse</a></li>
+				</ul>
+			</div>
+
+			<div class="bloc-footer footer-legal">
+				<h3>Informations légales</h3>
+				<ul>
+					<li><a href="#">Mentions légales</a></li>
+					<li><a href="#">Téléphone</a></li>
+					<li><a href="#">Adresse</a></li>
+				</ul>
+			</div>
+
+			<div class="bloc-footer footer-resaux">
+				<div class="resaux-line">
+					<div></div>
+				</div>
+				<div class="resaux-icon">
+					<a href="#"><img src="../img/iconInsta.svg"></a>
+					<a href="#"><img src="../img/iconYoutube.svg"></a>
+					<a href="#"><img src="../img/iconTwitter.svg"></a>
+				</div>
+			</div>
+
+			<a href="../index.html"><img class="footer-logo" src="../img/lePalaisLogoBlanc.svg"></a>
+		</div>
+		<p class="footer-copyright">Copyright © 2021 TDA MMI ELBEUF</p>
+	</footer>
+
+</body>
+
+</html>
